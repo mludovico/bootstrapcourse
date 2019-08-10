@@ -1,35 +1,46 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Container Training</title>
+    <title>Grid</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
-        .green{
-            background-color: green;
-            height: 80vh;
+        .con{
+            background-color: #a1a1a1;
+            height: 100vh;
         }
-        @media (max-width: 575px) {
-          .green{
+        .grey{
+            background-color: orange;
+            height: 200px;
+        }
+        .gr{
             background-color: red;
-            height: 80vh;
-          }
-        }
-        @media (min-width: 576px) and (max-width: 767px) {
-          .green{
-            background-color: blue;
-            height: 80vh;
-          }
+            height: 200px;
         }
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, totam.</h1>
-      <div class="container-fluid green">
-        <h1>aaa</h1>
+    <div class="container con">
+        <div class="row">
+            <div class="col-sm grey">Column 1</div>
+            <div class="col-sm gr">Column 2</div>
+            <div class="col-sm grey">Column 3</div>
+        </div>
+        <div class="row">1</div>
+        <div class="row justify-content-md-center">
+            <div class="col-sm-2 grey">Column 1</div>
+            <div class="col-sm-5 gr">Column 2</div>
+            <div class="col-sm grey">Column 3</div>
+        </div>
+        <div class="row">2</div>
+        <div class="row justify-content-md-center">
+            <div class="col-lg-6 col-md-4 col-sm-6 grey">Column 1</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 gr">Column 2</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 grey">Column 3</div>
+        </div>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
